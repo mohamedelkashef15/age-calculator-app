@@ -14,4 +14,67 @@ $off-black: hsl(0, 0%, 8%);
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: $light-grey;
+}
+
+#main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .breakline {
+    border-bottom: 1px solid $light-grey;
+    position: relative;
+    img {
+      background-color: $purple;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      position: absolute;
+      right: 0;
+      transform: translateY(-50%);
+    }
+    margin-top: 2rem;
+  }
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  width: 700px;
+  border-radius: 10px;
+  border-bottom-right-radius: 130px;
+  .date-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 80%;
+    label {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 15px;
+      width: 100%;
+      border: 1px solid $smokey-grey;
+      border-radius: 5px;
+      font-size: 32px;
+      font-weight: 800;
+    }
+  }
+
+  .output {
+    margin-top: 2rem;
+    p {
+      font-size: 50px;
+      font-weight: 800;
+      font-style: italic;
+      span {
+        color: $purple;
+      }
+    }
+  }
 }
