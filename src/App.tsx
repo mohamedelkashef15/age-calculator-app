@@ -22,7 +22,7 @@ function App() {
   const [birthDay, setBirthDay] = useState<string | number>("");
   return (
     <main id="main">
-      <section className="card">
+      <div className="card">
         <DateInputs
           birthYear={birthYear}
           setBirthYear={setBirthYear}
@@ -35,7 +35,7 @@ function App() {
           <img src="images/icon-arrow.svg" alt="icon-arrow" />
         </div>
         <Output birthYear={+birthYear} birthMonth={+birthMonth} birthDay={+birthDay} />
-      </section>
+      </div>
     </main>
   );
 }
