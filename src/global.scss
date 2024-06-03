@@ -33,6 +33,11 @@ body {
       position: absolute;
       right: 0;
       transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: $off-black;
+      }
     }
     margin-top: 2rem;
   }
